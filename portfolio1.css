@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Roboto',serif;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(35, 35, 35);
+}
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+}
+.nav-head:hover{
+    cursor: pointer;
+    color:coral;
+}
+li{
+    display: flex;
+    float: inline-start;
+}
+li a{
+    padding: 15px;
+    display: block;
+    color: white;
+}
+li a:hover{
+    color: coral;
+    cursor: pointer;
+}
+.description{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    font-size: large;
+    color: white;
+}
+.desc{
+    padding: 100px 40px;
+}
+.desc-head1{
+    font-size: 25px;
+}
+.desc-head1 span{
+    color: coral;
+}
+.desc-head2{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.desc-head2 span{
+    color: coral;
+    position: relative;
+}
+.desc-head2 span:after{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 3px solid coral;
+    right: -2px;
+    background-color: rgb(35, 35, 35);
+    animation: text 3s infinite backwards steps(10);
+}
+.desc p{
+    margin-top: 15px;
+}
+.reseaux i{
+    margin: 8px;
+    margin-top: 20px;
+    border: 1px solid coral;
+    border-radius: 50px;
+    transition: .5s ease;
+}
+.reseaux i:hover{
+    background-color: coral;
+    box-shadow: 0px 0px 20px coral;
+}
+.home-btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: coral;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+}
+.home-btn:hover{
+    background: transparent;
+    border: 2px solid coral;
+    color: white;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+    padding-top: 80px;
+    color: white;
+}
+.about-desc{
+    margin-left: 50px;
+}
+.about-desc h1{
+    font-size: 40px;
+}
+.about-desc h2{
+    margin-top: 10px;
+}
+.about-desc span{
+    color: coral;
+}
+.about-desc p{
+    margin-top: 10px;
+}
+.about-btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: coral;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+}
+.about-btn :hover{
+    background: transparent;
+    border: 2px solid coral;
+    color: white;
+}
+.about-photo:hover{
+    box-shadow: 0px 0px 10px coral;
+}
+.experiences-head{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 80px;
+}
+.experiences-head span{
+    color: coral;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+.card-layout{
+    border-radius: 20px;
+    background-color: rgb(60, 60, 60);
+    padding: 30px;
+    transition: 3s ease;
+}
+.card-layout i{
+    color: coral;
+    font-size: 40px;
+}
+.card-layout h2{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.card-layout p{
+    font-size: 15px;
+}
+.experiences-btn{
+     background: transparent;
+    border: 2px solid coral;
+    color: white;
+}
+.port-head{
+    margin-top: 150px;
+    text-align: center;
+    color:white ;
+    padding-top: 80px;
+}
+.port-head span{
+    color: coral;
+}
+.projet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projet-card{
+    margin: 30px;
+    margin-top: 60px;
+    border-radius: 20px;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(60, 60, 60);
+    padding: 30px;
+    transition: 3s ease;
+}
+br{
+    color: coral;
+}
+h4{
+    font-size: 25px;
+}
+@keyframes text{
+    0%{
+        left: 0;
+    }
+     50%{
+        left: 100%;
+    }
+     100%{
+        left: 0;
+    }
+}
